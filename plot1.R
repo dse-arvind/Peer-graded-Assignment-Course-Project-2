@@ -1,9 +1,9 @@
-#First we aggregate the data in
+##First we aggregate the data in
 
 totalEmission <- aggregate(Emissions ~ year, NEIdata, sum)
 totalEmission
 
-#Plotting the total Emissions over time using a base plotting
+##Plotting the total Emissions over time using a base plotting
 
 barplot(
   (totalEmission$Emissions)/10^6,
